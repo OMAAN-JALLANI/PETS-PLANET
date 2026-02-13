@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Planet | Get Your Dream Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="./imges/logo.webp" alt="Pets Planet Logo" class="nav-logo-img">
+            <span>Pets Planet</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#categories">Adopt Pets</a></li>
+            <li><a href="#services">Pet Care</a></li>
+            <li><a href="https://wa.me/03096510364" class="btn-nav">Contact Us <i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+<script>
+    const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-links');
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('active');
+    menuLinks.classList.toggle('active');
+});
+
+// Link click hone par menu band ho jaye
+document.querySelectorAll('.nav-links li a').forEach(n => n.addEventListener('click', () => {
+    menu.classList.remove('active');
+    menuLinks.classList.remove('active');
+}));
+</script>
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1 class="animate-text">Find Your New <span>Best Friend!</span> 🐾</h1>
+<p>Pets Planet laya hai aapke liye sabse pyare aur healthy pets. Aaj hi apne ghar ek naya sathi le jain!</p>
+<div class="hero-btns">
+    <a href="#categories" class="btn-primary">Adopt/Buy Now</a>
+    <a href="#" class="btn-secondary">Watch Happy Pets</a>
+</div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="circle-bg"></div>
+            <img src="./imges/logo.webp" alt="Pets Planet Logo" class="floating-img">
+            <div class="floating-icons">
+                <i class="fas fa-paw icon-1"></i>
+                <i class="fas fa-heart icon-2"></i>
+                <i class="fas fa-bone icon-3"></i>
+            </div>
+        </div>
+    </section>
+<!--catagoryyyyyyyyyyyyy-->
+
+<section class="pet-categories" id="shop">
+    <div class="container">
+        <h2 class="section-heading">Hamare <span>Pyare</span> Dost 🐾</h2>
+        
+        <div class="category-grid">
+            <div class="pet-card">
+                <div class="badge">New</div>
+                <div class="pet-thumb">
+                    <img src="./imges/cat.webp" alt="Cat"> </div>
+                <div class="pet-info">
+                    <h3>Persian Cats</h3>
+                    <p>Starting from $200</p>
+                    <a href="#" class="view-btn">View All <i class="fas fa-paw"></i></a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <div class="pet-thumb">
+                    <img src="./imges/odg1.webp" alt="Dog">
+                </div>
+                <div class="pet-info">
+                    <h3>Golden Retriever</h3>
+                    <p>Starting from $450</p>
+                    <a href="#" class="view-btn">View All <i class="fas fa-paw"></i></a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <div class="pet-thumb">
+                    <img src="./imges/parrt.webp" alt="Bird">
+                </div>
+                <div class="pet-info">
+                    <h3>Macaw Parrots</h3>
+                    <p>Starting from $150</p>
+                    <a href="#" class="view-btn">View All <i class="fas fa-paw"></i></a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <div class="pet-thumb">
+                    <img src="./imges/rabit.webp" alt="Rabbit">
+                </div>
+                <div class="pet-info">
+                    <h3>White Rabbits</h3>
+                    <p>Starting from $80</p>
+                    <a href="#" class="view-btn">View All <i class="fas fa-paw"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ssssssssssssssssssssss-->
+<section class="pet-care-section">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="animate-pop">Hamari <span>Special</span> Care 🧼</h2>
+            <p>Hum sirf dost dhoondte nahi, unhein groom aur train bhi karte hain!</p>
+        </div>
+
+        <div class="care-grid">
+            <div class="care-card">
+                <div class="care-icon bubble-blue">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Hair Cutting</h3>
+                <p>Professional grooming aur stylish hair cutting aapke pyare doston ke liye.</p>
+                <div class="care-status">Available Now</div>
+            </div>
+
+            <div class="care-card">
+                <div class="care-icon bubble-yellow">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Pet Training</h3>
+                <p>Hum doston ko discipline aur cool tricks sikhate hain maze-maze mein.</p>
+                <div class="care-status">Expert Trainers</div>
+            </div>
+
+            <div class="care-card">
+                <div class="care-icon bubble-pink">
+                    <i class="fas fa-dice-d20"></i>
+                </div>
+                <h3>Quality Toys</h3>
+                <p>Premium quality toys jo aapke pets ko sara din busy aur happy rakhein.</p>
+                <div class="care-status">New Collection</div>
+            </div>
+
+            <div class="care-card">
+                <div class="care-icon bubble-green">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Health Checkup</h3>
+                <p>Routine checkups taake aapka sathi hamesha fit aur active rahe.</p>
+                <div class="care-status">Professional Care</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--viodeeeeeeeeeeeee-->
+<section class="video-showcase">
+    <div class="container showcase-flex">
+        
+        <div class="video-container">
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline class="pet-video">
+                    <source src="./imges/v1.webm" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <div class="blob-bg"></div>
+        </div>
+
+        <div class="showcase-content">
+            <span class="tag">New Arrival 🔥</span>
+            <h2>Meet Our Tiny <span>New Kitten!</span></h2>
+            <p>Yeh nanha sa dost apne naye ghar ka intezar kar raha hai. Healthy, vaccinated aur bohot he playful!</p>
+            
+            <div class="cta-box">
+                <a href="https://wa.me/yournumber" class="btn-order-now">
+                    <i class="fas fa-shopping-cart"></i> Order This Pet
+                </a>
+                <p class="limited-stock">* Only 1 available in this breed!</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--trusttttttttttttttt-->
+<section class="benefits-section">
+    <div class="container">
+        <div class="benefits-grid">
+            
+            <div class="benefit-item">
+                <div class="benefit-icon icon-bg-1">
+                    <i class="fas fa-truck-fast"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Free Home Delivery</h3>
+                    <p>Poore shehar mein 24 ghantay ke andar delivery.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon icon-bg-2">
+                    <i class="fas fa-shield-dog"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Health Guarantee</h3>
+                    <p>Har pet 100% healthy aur certified hai.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon icon-bg-3">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Expert Advice</h3>
+                    <p>Khareedne ke baad bhi hum haazir hain.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="benefit-icon icon-bg-4">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <div class="benefit-text">
+                    <h3>Cash on Delivery</h3>
+                    <p>Pehlay pet check karein, phir paise dein.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--impacttttttttttttttt-->
+<section class="impact-section">
+    <div class="impact-content">
+        <h2 class="animate-heartbeat">Pets, Sirf Jaanwar Nahi, <span>Ghar Ka Hissa</span> Hain! ❤️</h2>
+        <p>Ek pet apke din ko roshan kar deta hai, tanhai door karta hai aur har lamhe ko khushi se bhar deta hai. Unki be-shart mohabbat apki zindagi badal sakti hai.</p>
+        <a href="#" class="btn-find-love">Apna Naya Sathi Dhundhein <i class="fas fa-arrow-right"></i></a>
+    </div>
+    
+    <div class="impact-image-container">
+        <img src="./imges/sa.png" alt="Happy Pet and Owner" class="impact-pet-image">
+        <div class="paw-print-overlay overlay-1"></div>
+        <div class="paw-print-overlay overlay-2"></div>
+    </div>
+</section>
+
+<!--CEOOOOOOOOOOOOOOOOOOOOO-->
+<section class="ceo-section">
+    <div class="container ceo-flex">
+        <div class="ceo-image-container">
+            <img src="./imges/ceo.png" alt="CEO of Pets Planet" class="ceo-photo">
+            <div class="name-tag">Mr. HUSNAIN</div>
+            <div class="speech-bubble">
+                <i class="fas fa-quote-left"></i>
+            </div>
+        </div>
+
+        <div class="ceo-content">
+            <span class="sub-heading">Hamare Visionary Founder</span>
+            <h2>Humara Har Pet, <span>Humari Pehchan</span> Hai!</h2>
+            <p>"Pets Planet sirf ek business nahi, yeh mera junoon hai. Har nanhe dost ko ek pyaara ghar mil jaye, aur har ghar ko ek wafadaar sathi – yehi mera maqsad hai. Hum apke bharose ki qadar karte hain."</p>
+            <p class="ceo-signature">- HUSNAIN AHMAD, Founder & CEO</p>
+            <a href="about-us.html" class="btn-read-story">Humari Kahani Padhein <i class="fas fa-book-open"></i></a>
+        </div>
+    </div>
+</section>
+
+<!--footerrrrrrrrrrrrrrrrrrrr-->
+
+<footer class="main-footer">
+    <div class="peeking-pets">
+        <img src="cat-peek.png" alt="Cute Cat" class="peek-cat">
+        <img src="dog-peek.png" alt="Cute Dog" class="peek-dog">
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-box">
+                <h2 class="footer-logo">Pets <span>Planet</span></h2>
+                <p>Apka bharosa humari pehchan hai. Hum dilaate hain apko apka naya sabse acha dost.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Shop Pets</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Care Tips</a></li>
+                    <li><a href="#">About CEO</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-user-tie"></i> <strong>CEO:</strong> HUSNAIN AHMAD</p>
+                <p><i class="fas fa-phone-alt"></i> 03096510364</p>
+                <p><i class="fas fa-envelope"></i> hello@petsplanet.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Multan, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pets Planet. All Rights Reserved.</p>
+            <p class="dev-credit">Code by <span>CODEDCRAFTE</span> 🚀</p>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
